@@ -62,8 +62,8 @@ jobs:
           jq -jr ".private_key" keys.json | npx wrangler secret --name ${worker_name} put HIYOCORD_PRIVATE_KEY
           jq -jr ".algorithm" keys.json | npx wrangler secret --name ${worker_name} put HIYOCORD_KEY_ALGORITHM
 
-           export ALGORITHM="$(jq -jr '.algorithm' keys.json)"
-           export PUBLIC_KEY="$(jq -jr '.public_key' keys.json)"
+          export ALGORITHM="$(jq -jr '.algorithm' keys.json)"
+          export PUBLIC_KEY="$(jq -jr '.public_key' keys.json)"
           npm run -w packages/workers manifest
         env:
           NEXUS_URL: ${{ secrets.NEXUS_URL }}

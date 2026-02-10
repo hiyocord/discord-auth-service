@@ -4,6 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
+    "start": "vite",
     "prebuild": "wrangler-configurer",
     "build": "vite build",
     "premanifest": "npm run build",
@@ -13,7 +14,7 @@
   },
   "dependencies": {
     "@hiyocord/discord-interaction-client": "^0.3.1",
-    "@hiyocord/hiyocord-nexus-core": "^0.7.1",
+    "@hiyocord/hiyocord-nexus-core": "^0.7.2",
     "discord-api-types": "^0.38.38",
     "hono": "^4.11.8"
   }

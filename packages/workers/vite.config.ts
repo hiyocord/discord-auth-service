@@ -20,6 +20,11 @@ export default defineConfig({
       }
     }
   },
+  server: {
+    allowedHosts: [
+      "discord-auth.hiyocord.org"
+    ],
+  },
   plugins: [
     cloudflare()
   ]

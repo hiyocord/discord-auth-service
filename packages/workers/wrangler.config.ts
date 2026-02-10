@@ -2,7 +2,7 @@ import type { WranglerConfigurerOptions } from '@hiyocord/wrangler-configurer'
 
 export default {
   params: {
-    name: "hiyocord-nexus-workers",
+    name: "discord-auth-service",
     main: "./src/index.ts",
     compatibility_date: "2025-10-08",
     compatibility_flags: [
